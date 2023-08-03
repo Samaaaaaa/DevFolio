@@ -1,0 +1,238 @@
+/* -------------- global -------------- */
+:root{
+    --main-color: #0078ff;
+}
+
+*{
+    text-decoration: none;
+    list-style: none;
+    font-family: Segoe UI;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+ /* =========================== header ===========================  */
+
+ /* -------------- navbar --------------  */
+
+.navbar-brand, .nav-link{
+    color: white !important;
+    font-size: 20px;
+    
+}
+
+/* -------------- home -------------- */
+ #home{
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),
+    url(../img/hero-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+h1, h2{
+    color: white;
+    Font-size: 72px;
+    Font-weight: 600;
+    Line-height: 86.4px;
+}
+
+/*  =========================== About ===========================  */
+
+#about .content h3 {
+    position: relative;
+}
+
+#about .content h3::after {
+    content: '';
+    width: 100px;
+    height: 3px;
+    background-color: #0078ff;
+    position: absolute;
+    top: 110%;
+    left: 0%;
+}
+
+/*  =========================== services ===========================  */
+#services p, #portofolio h3, #blog   h3{
+    position: relative;
+}
+
+#services .after p::after, #portofolio h3::after, #blog  h3::after{
+    content: '';
+    width: 50px;
+    height: 4px;
+    background-color: var(--main-color);
+    position: absolute;
+    top: 130%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.item, .count{
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.item .icon{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 10px solid var(--main-color) ;
+    font-size: 40px;
+    margin: auto;
+    transition: all 1s;
+}
+
+.item:hover .icon{
+    background-color: var(--main-color);
+    border-color: #cde1f8;
+}
+
+/*  -------------- counter --------------  */
+.counter{
+    background-image: linear-gradient(hsla(212, 100%, 50%, 0.419),hsla(212, 100%, 50%, 0.425)) ,
+    url(../img/counters-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.counter .count .iconaCounter{
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    border-radius: 50%;
+    border: 7px solid #cde1f8;
+    margin: auto;
+    color: white;
+}
+
+/*  =========================== PORTFOLIO ===========================  */
+#portofolio .cont a, #portofolio .cont p{
+    font-size: 14px;
+    text-decoration: none !important;
+}
+
+.pluscont{
+    position: relative;
+}
+
+.plus{
+    position: absolute;
+    bottom: 100%;
+    right: 0%;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid var(--main-color) ;
+    color: var(--main-color);
+    font-size: 25px;
+    margin: 0px 10px 10px 0px;
+    cursor: pointer;
+}
+
+#portofolio .text-left{
+    text-align: left ;
+    padding-left: 10px;
+}
+
+.itemaya{
+        overflow: hidden;
+
+}
+
+.itemaya:hover .ima{
+    transform: scale(1.3);
+    transition: transform 1s ease-in-out;
+
+} 
+
+ /* =========================== blog ===========================  */
+#blog{
+    height: 100vh;
+}
+
+#blog.row{
+    border: 1px solid #333 !important;
+}
+
+.w{
+    width: 50px;
+}
+
+#blog a{
+    color: black;
+    transition: color 1s;
+}
+
+#blog a:hover{
+    color: var(--main-color);
+}
+
+#blog .itemo p{
+    position: relative;
+}
+
+#blog .itemo p::after{
+    content:'Travel';
+    color: white;
+    text-align: center;
+    width: 100px;
+    height: 40px;
+    background-color: #0078ff;
+    position: absolute;
+    bottom: 130%;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 4;
+    border-radius: 5px;
+}
+
+/* =========================== contact =========================== */
+
+#contact{
+   height: 100vh;
+    background-image: linear-gradient(#0077ffb9,#0077ffc2),
+    url(../img/overlay-bg.jpg);
+    background-size: 100% 100%;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#contact .container{
+    background-color: white;
+    width: 50%;
+    height: 75%;
+}
+
+#contact .container input{
+    transition: all 1s;
+}
+
+#contact .container input:hover{
+    box-shadow: 0 0 10px #0078ff;
+}
+
+button{
+    background-color: var(--main-color) !important;
+    transition: all 1s;
+}
+
+button:hover{
+    background-color: (51, 147, 255);
+    box-shadow: 0 0 10px #0078ff;
+    
+}
+
+
+
+
